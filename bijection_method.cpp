@@ -83,7 +83,7 @@ int main()
     }
   }
   
-  cout<<bijection(1,3)<<endl;
+  cout<<bijection(a,b)<<endl;
 
     return 0;
 }
