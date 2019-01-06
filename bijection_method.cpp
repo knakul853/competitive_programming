@@ -17,7 +17,6 @@ double bijection(double a, double b)
 {
 
     double c = (a + b)/2.0 ;
-    double c1=0;
     int k=0;
     cout<<"ite"<<"\t\t"<<"A"<<"\t\t"<<"B"<<"\t\t"<<"C"<<"\t\t"<<"F(C)"<<"\t\t"<<"error"<<"\n";
     cout<<"__________________________________________________________________________"<<endl;
@@ -35,7 +34,6 @@ double bijection(double a, double b)
         }
         else
         a = c;
-        c1 = c;
 
     }
      
@@ -54,7 +52,7 @@ int main()
   }
   cout<< "enter the Epsilon"<<"\n";
   cin >> epsilon;
-
+// loop to find a and  b such that  value of the product of the function becomes negative
   int a=0,b=0;
   int i=0,j=0;
   if(func(0)<0)
@@ -82,6 +80,7 @@ int main()
         a=j;b=j+1;
     }
   }
+    // ends of the loop
   
   cout<<bijection(a,b)<<endl;
 
