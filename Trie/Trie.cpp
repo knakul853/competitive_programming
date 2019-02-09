@@ -29,8 +29,42 @@ void add(trie* root,string s)
     root->leaf=true;
 }
 
+void print(trie* root , string ans){
+
+    if(root->leaf==false)
+    {
+        for(int i=0;i<26;i++)
+        {
+            if(root->child[i]!=NULL)
+            {
+                ans = ans + char('a'+i);
+                print(root->child[i],ans);
+                ans = ans.substr(0,ans.length()-1);
+            }
+        }
+    }
+    else
+    {
+        cout<<ans<<"\n";
+        root->leaf=false;
+        print(root,ans);
+    }
+}
+
+trie* root;
 
 int main()
 {
+
+
+    int n;cin>>n;
+    root=create();
+    for(int i=0;i<n;i++)
+    {
+        string s;
+        cin>>s;
+        add(root,s);
+    }
+    print(root,"");
     
 }
