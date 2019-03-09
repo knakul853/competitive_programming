@@ -1,4 +1,6 @@
-
+/*
+in case it loops infinity (does on some of the ides) you can fix the iterations.
+*/
 #include<stdio.h>
 #include<math.h>
 int eq[1000];
@@ -24,7 +26,8 @@ double bijection(double a, double b)
 {
 int k=0;
     double c = a ;
-    while(abs(b-a)>= epsilon)
+    int tt=20;
+    while(abs(b-a)>= epsilon && tt--)
     {
 
 
