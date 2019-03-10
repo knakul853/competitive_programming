@@ -35,7 +35,7 @@ double dfunc(double a)
 }
 
 
-double scecent(double a)
+double rapson(double a)
 {
     double b = func(a)/dfunc(a);
     while(abs(b)>=epsilon)
@@ -104,7 +104,7 @@ int main()
     if(a>0)swap(&a,&b); // just make 'a'  always negative :
     a = (a+b)/2;
   
-  printf("%lf\n",scecent(a));
+  printf("%lf\n",rapson(a));
 
     return 0;
 }
