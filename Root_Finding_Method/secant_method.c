@@ -22,7 +22,7 @@ double func(double a)
     return sm;
 }
 
-double scecent(double a, double b)
+double secant(double a, double b)
 {
     double c = a;
     while(abs(b-a)>=epsilon)
@@ -78,7 +78,7 @@ int main()
     // ends of the loop
     if(a>0)swap(&a,&b); // just make 'a'  always negative :
   
-  printf("%lf\n",scecent(a,b));
+  printf("%lf\n",secant(a,b));
 
     return 0;
 }
