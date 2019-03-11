@@ -23,10 +23,11 @@ double func(double a)
 double bijection(double a, double b)
 {
 int k=0;
+    int ite=50;
     double c = a ;
     cout<<"ite"<<"\t\t"<<"A"<<"\t\t"<<"B"<<"\t\t"<<"C"<<"\t\t"<<"F(C)"<<"\t\t"<<"error"<<"\n";
     cout<<"__________________________________________________________________________"<<endl;
-    while(abs(b-a)>= epsilon)
+    while(abs(b-a)>= epsilon && ite--)
     {
   cout<<k++<<"\t"<<a<<"\t"<<b<<"\t"<<c<<"\t"<<func(c)<<"\t"<<abs(b-a)<<"\n";
 
