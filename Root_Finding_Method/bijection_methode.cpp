@@ -19,11 +19,10 @@ double bijection(double a, double b)
 
     double c = (a + b)/2.0 ;
     int k=0;
-    cout<<"ite"<<"\t\t"<<"A"<<"\t\t"<<"B"<<"\t\t"<<"C"<<"\t\t"<<"F(C)"<<"\t\t"<<"error"<<"\n";
-    cout<<"__________________________________________________________________________"<<endl;
+    
     while(abs(b-a)>= epsilon)
     {
-  cout<<k++<<"\t"<<a<<"\t"<<b<<"\t"<<c<<"\t"<<func(c)<<"\t"<<abs(b-a)<<"\n";
+  
 
 
         c = (a + b)/2.0;
