@@ -1,4 +1,3 @@
-
 #include<bits/stdc++.h>
 using namespace std;
 int eq[1000];
