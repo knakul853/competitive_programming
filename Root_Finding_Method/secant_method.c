@@ -24,10 +24,11 @@ double func(double a)
 
 double secant(double a, double b)
 {
-    double c = a;
+    double c = a,k;
     while(abs(b-a)>=epsilon)
-    {
-        c = (b*(func(a)) - a * (func(b)))/(func(a)-func(b));
+    {   
+        k = b*(func(a)) - a*(func(b));
+        c = k/(func(a)-func(b));
         a=b;
         b=c;
     }
