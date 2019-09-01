@@ -175,3 +175,6 @@ void scc()
 
 ///  https://www.spoj.com/problems/CAPCITY/
 /// solution : https://pastebin.com/xkHu0Rub
+
+///https://www.spoj.com/problems/TOUR/
+/// https://pastebin.com/5EZF4DfN
