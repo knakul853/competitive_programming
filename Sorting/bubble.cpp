@@ -14,7 +14,7 @@ void bubble_sort(int a[],int n)
 	}
 }
 
-void print()
+void print(int a[] , int n)
 {
 	for(int i=1;i<=n;i++)
 	{
@@ -27,13 +27,13 @@ int main()
 	int n;
 
 	cin >> n;
-	
+
 	int a[n];
 	for(int i=1;i<=n;i++)
 	{
 		cin >> a[i];
 	}
     bubble_sort(a,n);
-	print();
+	print(a,n);
 
 }
