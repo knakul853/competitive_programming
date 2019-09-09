@@ -26,5 +26,10 @@ void dfs(int v,int p = -1)
 }
 
 problems and solutions :
-/// http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=737
+/// http://www.spoj.com/problems/EC_P/
 // https://pastebin.com/69d9xW47
+
+
+
+//https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=737
+///https://pastebin.com/Nn3vzMcq
