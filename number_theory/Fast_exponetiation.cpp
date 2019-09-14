@@ -44,5 +44,8 @@ return 0;
 
 }
 
-/// https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1970
-/// https://pastebin.com/zTfF02XE
+/// : https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1970
+/// :  https://pastebin.com/zTfF02XE
+
+/// : http://www.spoj.com/problems/LOCKER/
+/// : https://pastebin.com/Spwz4HhG
