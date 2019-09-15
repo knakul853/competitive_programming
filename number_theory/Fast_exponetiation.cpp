@@ -17,31 +17,7 @@ int f(int a,int b,int mod)
         b = b >> 1;
         a  = ( a  * a  ) % mod;
     }
-    return res % 1000;
-}
-void solve()
-{
-    int a,b;
-    cin >> a >> b;
-    int first;
-    double t = b * log10(a);
-    t = t - (int)t;
-    first = pow(10.0 , t) * 100;
-    a%=1000;
-    int second = f(a, b, 1000);
-        printf("%d...%03d\n",first,second);
-}
-
-int32_t main()
-{     
-  int t;
-  cin >> t;
-  while(t--)
-  {
-      solve();
-  }
-return 0;
-
+    return res % mod;
 }
 
 /// : https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1970
@@ -49,3 +25,12 @@ return 0;
 
 /// : http://www.spoj.com/problems/LOCKER/
 /// : https://pastebin.com/Spwz4HhG
+
+/// : https://www.spoj.com/problems/ZSUM/
+/// : https://pastebin.com/qSGj9smt
+
+
+
+TODO : 
+///https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1723
+///http://codeforces.com/problemset/problem/630/I
