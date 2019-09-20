@@ -101,6 +101,7 @@
 * Cormen book chapter 25.
 
 ## Dynamic Programming.
+https://codeforces.com/blog/entry/67679
 * Suggested Reading - Dynamic Programming(DP) as a tabulation method
 * Cormen chapter on DP
 * Standard problems (you should really feel comfortable with these types)
