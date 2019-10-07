@@ -1,104 +1,5 @@
-# competitive_programming
-
 # Competitive Programming Syllabus
 
-## Geometry
-* Graham Scan algorithm for Convex Hull O(n * log(n))
-* Online construction of 3-D convex hull in O(n^2)
-* Bentley Ottmann algorithm to list all intersection points of n line segments in O((n + I) * logn)
-  + Suggested Reading - http://softsurfer.com/Archive/algorithm_0108/algorithm_0108.htm
-* Rotating Calipers Technique
-  + Suggested Reading - http://cgm.cs.mcgill.ca/~orm/rotcal.html
-  + Problems - Refer the article for a list of problems which can be solved using Rotating Calipers technique.
-* Line Sweep/Plane Sweep algorithms
-* Area/Perimeter of Union of Rectangles.
-* Closest pair of points.
-  + Suggested Reading - http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=lineSweep
-  + Problems - Follow the tutorial for list of problems.
-* Area of Union of Circles.
-* Delaunay Triangulation of n points in O(n * logn).
-* Voronoi Diagrams of n points in O(n * logn) using Fortune’s algorithm.
-* Point in a polygon problem -
-  + O(n) solution without preprocessing.
-  + O(logn) algorithm with O(n * logn) preprocessing for convex polygons.
-* Problems on computational geometry -
-  + BSHEEP, BULK, SEGVIS, CONDUIT, RUNAWAY, DIRVS, RAIN1, SHAMAN, TCUTTER, LITEPIPE, RHOMBS, FSHEEP,
-    FLBRKLIN, CERC07P, BAC, ALTARS, CERC07C, NECKLACE, CH3D, RECTANGL, POLYSSQ, FOREST2, KPPOLY,
-    RAIN2, SEGMENTS, ARCHPLG, BALLOON, CIRCLES, COMPASS, EOWAMRT, ICERINK on SPOJ.
-  + CultureGrowth, PolygonCover on Topcoder.
-* Suggested Reading - Computational Geometry: Algorithms and applications. Mark De Burg.
-
-## String Algorithms
-
-### Substring search
-* KnuthMorrisPratt algorithm (Problems - NHAY, PERIOD on SPOJ)
-* Suggested Reading - Cormen chapter on Strings.
-* http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=stringSearching
-* Aho Corasick algorithm
-* Problems - WPUZZLES on SPOJ
-
-### Suffix Arrays
-* O(n^2 * logn) Naive method of suffix array construction
-* O(n * logn^2) method of suffix array construction
-* O(n * logn) method of suffix array construction
-* O(n) method of suffix array construction
-* O(n) LCA preprocess on Suffix Arrays to solve a variety of string problems
-
-### Suffix Trees
-* O(n) construction of Suffix trees using Ukkonon’s algorithm
-* O(n) construction of Suffix Trees if provided with Suffix Arrays using Farach's algorithm
-
-### Other
-* Suffix Automata - O(n) Suffix Automaton construction.
-* Dictionary Of Basic Factors - O(n * logn) method of DBF construction using Radix Sort.
-* Manacher’s algorithm to find length of palindromic substring of a string centered at a position for each position in the string.
-  Runtime -> O(n).
-* Searching and preprocessing Regular Expressions consisting of '?' and '\*'
-
-### Multi-dimensional pattern matching
-* DISUBSTR, PLD, MSTRING, REPEATS, JEWELS, ARCHIVER, PROPKEY, LITELANG, EMOTICON, WORDS, AMCODES, UCODES, PT07H, MINSEQ, TOPALIN, BWHEELER, BEADS, SARRAY, LCS, LCS2, SUBST1, PHRASES, PRETILE on SPOJ
-* http://www.algorithmist.com/index.php/Category:String_algorithms
-
-## Graphs
-
-### Basic Graphs
-* Representation of graphs as adjacency list, adjacency matrix, incidence matrix and edge list and uses of different representations in different scenarios
-* Breadth First Search (Problems - PPATH, ONEZERO, WATER on SPOJ)
-* Depth First Search
-* Strongly Connected Components (TOUR and BOTTOM on SPOJ)
-* Biconnected Components, Finding articulation points and bridges (RELINETS, PT07A on SPOJ)
-* Dijkstra algorithm (SHPATH on SPOJ)
-* Floyd Warshall algorithm (COURIER on SPOJ)
-* Minimum Spanning Tree (BLINNET on SPOJ)
-* Flood-fill algorithm
-* Topological sort
-* Bellman-Ford algorithm.
-* Euler Tour/Path (WORDS1 on SPOJ)
-* Suggested reading for most of the topics in Graph algorithms -
-  http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=graphsDataStrucs1.
-* Also refer to the tutorial for problems concerning these techniques.
-* Cormen chapter 22 to 24.
-
-### Flow networks/ matching
-* Maximum flow using Ford Fulkerson Method
-  + Suggested Reading - http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=maxFlow
-  + problems - TAXI, POTHOLE, IM, QUEST4, MUDDY, EN, CABLETV, STEAD, NETADMIN, COCONUTS, OPTM on SPOJ.
-* Maximum flow using Dinic’s Algorithm (PROFIT on spoj)
-* Minimum Cost Maximum Flow.
-* Successive Shortest path algorithm.
-* Cycle Cancelling algorithm - http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=minimumCostFlow1
-* Maximum weighted Bipartite Matching (Kuhn Munkras algorithm/ Hungarian Method)
-  + problems - GREED, SCITIES, TOURS on SPOJ | http://www.topcoder.com/stat?c=problem_statement&pm=8143
-* Stoer Wagner min-cut algorithm.
-* Hopcroft Karp bipartite matching algorithm (ANGELS on SPOJ)
-* Maximum matching in general graph (blossom shrinking)
-* Gomory-Hu Trees (MCQUERY on Spoj)
-* Chinese Postman Problem
-  + problems - http://acm.uva.es/archive/nuevoportal/data/problem.php?p=4039
-  + Suggested Reading - http://eie507.eie.polyu.edu.hk/ss-submission/B7a/
-* Suggested Reading for the full category ->
-* Network flow - Algorithms and Applications by Ahuja
-* Cormen book chapter 25.
 
 ## Dynamic Programming.
 https://codeforces.com/blog/entry/67679
@@ -510,12 +411,105 @@ https://codeforces.com/blog/entry/67679
 
 
 
-
-
-
-
-
-
 https://codeforces.com/blog/entry/54526  
 https://codeforces.com/blog/entry/54526<br/>
 https://docs.google.com/document/d/1_dc3Ifg7Gg1LxhiqMMmE9UbTsXpdRiYh4pKILYG2eA4/edit<br/>
+
+## Geometry
+* Graham Scan algorithm for Convex Hull O(n * log(n))
+* Online construction of 3-D convex hull in O(n^2)
+* Bentley Ottmann algorithm to list all intersection points of n line segments in O((n + I) * logn)
+  + Suggested Reading - http://softsurfer.com/Archive/algorithm_0108/algorithm_0108.htm
+* Rotating Calipers Technique
+  + Suggested Reading - http://cgm.cs.mcgill.ca/~orm/rotcal.html
+  + Problems - Refer the article for a list of problems which can be solved using Rotating Calipers technique.
+* Line Sweep/Plane Sweep algorithms
+* Area/Perimeter of Union of Rectangles.
+* Closest pair of points.
+  + Suggested Reading - http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=lineSweep
+  + Problems - Follow the tutorial for list of problems.
+* Area of Union of Circles.
+* Delaunay Triangulation of n points in O(n * logn).
+* Voronoi Diagrams of n points in O(n * logn) using Fortune’s algorithm.
+* Point in a polygon problem -
+  + O(n) solution without preprocessing.
+  + O(logn) algorithm with O(n * logn) preprocessing for convex polygons.
+* Problems on computational geometry -
+  + BSHEEP, BULK, SEGVIS, CONDUIT, RUNAWAY, DIRVS, RAIN1, SHAMAN, TCUTTER, LITEPIPE, RHOMBS, FSHEEP,
+    FLBRKLIN, CERC07P, BAC, ALTARS, CERC07C, NECKLACE, CH3D, RECTANGL, POLYSSQ, FOREST2, KPPOLY,
+    RAIN2, SEGMENTS, ARCHPLG, BALLOON, CIRCLES, COMPASS, EOWAMRT, ICERINK on SPOJ.
+  + CultureGrowth, PolygonCover on Topcoder.
+* Suggested Reading - Computational Geometry: Algorithms and applications. Mark De Burg.
+
+## String Algorithms
+
+### Substring search
+* KnuthMorrisPratt algorithm (Problems - NHAY, PERIOD on SPOJ)
+* Suggested Reading - Cormen chapter on Strings.
+* http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=stringSearching
+* Aho Corasick algorithm
+* Problems - WPUZZLES on SPOJ
+
+### Suffix Arrays
+* O(n^2 * logn) Naive method of suffix array construction
+* O(n * logn^2) method of suffix array construction
+* O(n * logn) method of suffix array construction
+* O(n) method of suffix array construction
+* O(n) LCA preprocess on Suffix Arrays to solve a variety of string problems
+
+### Suffix Trees
+* O(n) construction of Suffix trees using Ukkonon’s algorithm
+* O(n) construction of Suffix Trees if provided with Suffix Arrays using Farach's algorithm
+
+### Other
+* Suffix Automata - O(n) Suffix Automaton construction.
+* Dictionary Of Basic Factors - O(n * logn) method of DBF construction using Radix Sort.
+* Manacher’s algorithm to find length of palindromic substring of a string centered at a position for each position in the string.
+  Runtime -> O(n).
+* Searching and preprocessing Regular Expressions consisting of '?' and '\*'
+
+### Multi-dimensional pattern matching
+* DISUBSTR, PLD, MSTRING, REPEATS, JEWELS, ARCHIVER, PROPKEY, LITELANG, EMOTICON, WORDS, AMCODES, UCODES, PT07H, MINSEQ, TOPALIN, BWHEELER, BEADS, SARRAY, LCS, LCS2, SUBST1, PHRASES, PRETILE on SPOJ
+* http://www.algorithmist.com/index.php/Category:String_algorithms
+
+## Graphs
+
+### Basic Graphs
+* Representation of graphs as adjacency list, adjacency matrix, incidence matrix and edge list and uses of different representations in different scenarios
+* Breadth First Search (Problems - PPATH, ONEZERO, WATER on SPOJ)
+* Depth First Search
+* Strongly Connected Components (TOUR and BOTTOM on SPOJ)
+* Biconnected Components, Finding articulation points and bridges (RELINETS, PT07A on SPOJ)
+* Dijkstra algorithm (SHPATH on SPOJ)
+* Floyd Warshall algorithm (COURIER on SPOJ)
+* Minimum Spanning Tree (BLINNET on SPOJ)
+* Flood-fill algorithm
+* Topological sort
+* Bellman-Ford algorithm.
+* Euler Tour/Path (WORDS1 on SPOJ)
+* Suggested reading for most of the topics in Graph algorithms -
+  http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=graphsDataStrucs1.
+* Also refer to the tutorial for problems concerning these techniques.
+* Cormen chapter 22 to 24.
+
+### Flow networks/ matching
+* Maximum flow using Ford Fulkerson Method
+  + Suggested Reading - http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=maxFlow
+  + problems - TAXI, POTHOLE, IM, QUEST4, MUDDY, EN, CABLETV, STEAD, NETADMIN, COCONUTS, OPTM on SPOJ.
+* Maximum flow using Dinic’s Algorithm (PROFIT on spoj)
+* Minimum Cost Maximum Flow.
+* Successive Shortest path algorithm.
+* Cycle Cancelling algorithm - http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=minimumCostFlow1
+* Maximum weighted Bipartite Matching (Kuhn Munkras algorithm/ Hungarian Method)
+  + problems - GREED, SCITIES, TOURS on SPOJ | http://www.topcoder.com/stat?c=problem_statement&pm=8143
+* Stoer Wagner min-cut algorithm.
+* Hopcroft Karp bipartite matching algorithm (ANGELS on SPOJ)
+* Maximum matching in general graph (blossom shrinking)
+* Gomory-Hu Trees (MCQUERY on Spoj)
+* Chinese Postman Problem
+  + problems - http://acm.uva.es/archive/nuevoportal/data/problem.php?p=4039
+  + Suggested Reading - http://eie507.eie.polyu.edu.hk/ss-submission/B7a/
+* Suggested Reading for the full category ->
+* Network flow - Algorithms and Applications by Ahuja
+* Cormen book chapter 25.
+
