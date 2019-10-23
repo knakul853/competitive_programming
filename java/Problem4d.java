@@ -1,0 +1,76 @@
+import java.util.*;
+
+public class Solution {
+
+    void knakul853()
+    {
+        Scanner sc = new Scanner(System.in);
+        int row;
+        System.out.println("Enter no of rows\n");
+        row = sc.nextInt();
+
+        // First Half
+        int start = (row)/2;
+        int l = 0;
+        for(int i=0;i<row&&start>=0;i++)
+        {
+            String ans="";
+            int cnt = 0;
+            for(int j=0;j<start;j++)
+            {
+                ans+=" ";
+            }
+            int t = 2*l+1;
+            int len=t;
+            while(t-->0)
+            {
+                if((len)/2 <= t )
+                cnt++;
+                else cnt--;
+                Integer obj = new Integer(cnt);
+                ans+=obj.toString();
+            }
+            System.out.println(ans);
+            start --;
+            l++;
+              
+        }
+        // Second Half
+       
+       start = 0;
+       l = row;
+       for(int i=0;i<row;i++)
+       { String ans="";
+       int cnt = 0;
+           for(int j=0;j<start;j++)
+           {
+               ans+=" ";
+           }
+        int tm = l;
+        int len = tm;
+        while(tm-->0)
+        {
+            if((len)/2 <= tm)cnt++;
+            else cnt--;
+
+            Integer obj = new Integer(cnt);
+            ans+=obj.toString();
+        }
+        l-=2;
+        start++;
+        System.out.println(ans);
+       }
+    }
+
+    public static void main(String[] args) {
+        Solution obj = new Solution();
+        obj.knakul853();
+}
+}
+/*
+    Read the problem before submitting ....Check on Multiple testcases.
+    Leap of faith.....Leap of faith.....Leap of faith.....Leap of faith.....
+    Guardian angel...Guardian angel...Guardian angel...Guardian angel...Guardian angel..
+  
+*/
+
