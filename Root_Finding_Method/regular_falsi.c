@@ -26,7 +26,7 @@ double bijection(double a, double b)
 {
 int k=0;
     double c = a ;
-    int tt=20;
+    int tt=50;
     while(abs(b-a)>= epsilon && tt--)
     {
 
